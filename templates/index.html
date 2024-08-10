@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character.AI Image Gen WebUI</title>
+    <script src="{{ url_for('static', filename='conn.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Character.AI Image Gen WebUI</h1>
+    <h3>Version 0.1</h3>
+    <p>Input a prompt below.</p>
+    <div>
+        <input type="text" name="prompt" id="prompt" value="">
+        <button onclick="generate()">Generate</button>
+    </div>
+    <p id="status"></p>
+    <div class="frame" id="outputs" style="display: none;">
+
+    </div>
+</body>
+</html>
